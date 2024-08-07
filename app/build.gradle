@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdk 35
+    //buildToolsVersion "35.0.0"
+    namespace "com.weidongjian.meitu.wheelviewdemo"
 
     defaultConfig {
         applicationId "com.weidongjian.meitu.wheelviewdemo"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
 //        jackOptions {
@@ -29,7 +30,7 @@ android {
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
 //    api project(':loopview')
-    api 'com.android.support:appcompat-v7:28.0.0'
+    api 'androidx.appcompat:appcompat:1.6.1'
     api 'com.github.weidongjian:androidWheelView:1.0.0'
 }
 
